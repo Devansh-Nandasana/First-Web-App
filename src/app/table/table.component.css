@@ -1,0 +1,42 @@
+.tablePart {
+  float: left;
+  width: 45%;
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+.tableHead input {
+  width: 100px;
+  float: right;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.table {
+  padding-top: 10px;
+}
+.table tr:nth-child(odd) {
+  background: lightgray;
+}
+.tableHead {
+  display: inline-block;
+  width: 100%;
+}
+.listText {
+  float: left;
+}
+.addNewButton {
+  float: right;
+}
+.tableData {
+  width: 100%;
+  border-collapse: collapse;
+}
+.firstRow {
+  background-color: magenta;
+  color: white;
+}

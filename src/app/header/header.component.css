@@ -1,0 +1,20 @@
+.header {
+  border-bottom: 1px solid lightblue;
+  align-items: center;
+  display: flex;
+  overflow: auto;
+  font-weight: bold;
+}
+.header h2 {
+  color: green;
+  float: left;
+  font-style: italic;
+  flex-grow: 1;
+  padding-left: 5px;
+}
+.welcome {
+  float: right;
+  display: inline;
+  align-items: center;
+  padding-right: 5px;
+}

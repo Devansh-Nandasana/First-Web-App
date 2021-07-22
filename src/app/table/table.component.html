@@ -1,0 +1,31 @@
+<div class="tablePart">
+  <div class="tableHead">
+    <div class="listText">Assets List</div>
+    <input
+      type="text"
+      placeholder="Search"
+      [(ngModel)]="searchInput"
+      (ngModelChange)="onSearchInputChange($event)"
+    />
+  </div>
+  <div class="table">
+    <table class="tableData" id="AssetTable">
+      <tr class="firstRow" style="background-color: magenta;">
+        <td>Id</td>
+        <td>Name</td>
+        <td>Tag</td>
+        <td>Description</td>
+      </tr>
+      <tr *ngFor="let row of filterData;index as i" (click)="onClick(i)">
+        <td
+          [ngClass]="{'green': (row.id.length<2 && row.id<'5'), 'red': (row.id.length>=2 || row.id>='5')}"
+        >
+          {{row.id}}
+        </td>
+        <td>{{row.name}}</td>
+        <td>{{row.tag}}</td>
+        <td>{{row.description}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

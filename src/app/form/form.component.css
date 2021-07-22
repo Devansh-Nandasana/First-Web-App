@@ -1,0 +1,29 @@
+.formPart {
+  float: right;
+  width: 45%;
+  padding-top: 15px;
+}
+.form td:nth-child(odd) {
+  text-align: right;
+  vertical-align: top;
+}
+input,
+textarea {
+  width: 80%;
+  border-radius: 5px;
+}
+.button-panel {
+  text-align: right;
+  width: 90%;
+}
+.formTable {
+  width: 100%;
+}
+.blue {
+  background-color: blue;
+  color: white;
+}
+.lightblue {
+  background-color: lightblue;
+  color: white;
+}
